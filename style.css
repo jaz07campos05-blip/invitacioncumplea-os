@@ -1,0 +1,493 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+    text-align:center;
+    background:#424a8d;
+    color:#333;
+}
+
+/* ========================= */
+/* PORTADA */
+/* ========================= */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.hero img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center center;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.35);
+
+}
+
+.contenidoHero{
+
+    position:absolute;
+
+    bottom:10%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    z-index:2;
+
+    color:rgb(211, 50, 50);
+
+}
+
+.contenidoHero h3{
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+
+}
+
+.contenidoHero h1{
+
+    font-size:4rem;
+
+    margin-bottom:10px;
+
+    text-shadow:0 2px 10px rgba(161, 40, 40, 0.5);
+
+}
+
+.contenidoHero h2{
+
+    letter-spacing:2px;
+
+}
+
+/* ========================= */
+/* MENSAJE */
+/* ========================= */
+
+.mensaje{
+
+    background:#d6445d;
+
+
+    color:rgb(238, 221, 221);
+
+    padding:60px 30px;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+}
+
+/* ========================= */
+/* CONTADOR */
+/* ========================= */
+
+.contador{
+
+    padding:60px 20px;
+
+}
+
+.contador h2{
+
+    margin-bottom:25px;
+
+}
+
+#countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+#countdown div{
+
+    background:rgb(253, 224, 224);
+
+    width:100px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.12);
+
+}
+
+#countdown span{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+}
+
+/* ========================= */
+/* GALERIA */
+/* ========================= */
+
+.galeria{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.galeria img{
+
+    width:100%;
+
+    height:100vh;
+
+    object-fit:cover;
+
+    object-position:center center;
+
+    display:block;
+
+}
+
+/* ========================= */
+/* UBICACION */
+/* ========================= */
+
+.mapa{
+
+    padding:60px 20px;
+
+}
+
+.mapa h2{
+
+    margin-bottom:20px;
+
+}
+
+.mapa a{
+
+    background:#ce3851;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:20px;
+
+    display:inline-block;
+
+}
+
+/* ========================= */
+/* RSVP PREMIUM */
+/* ========================= */
+
+.rsvp{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+    background-image:url("TOSHI\ FINAL.jfif");
+
+    background-size:cover;
+
+    background-position:center center;
+
+    background-repeat:no-repeat;
+
+    overflow:hidden;
+
+}
+
+/* Capa oscura elegante */
+
+.rsvp::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    z-index:1;
+
+}
+
+/* Contenido encima */
+
+.rsvp h2,
+.rsvp form,
+.rsvp h3{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.rsvp h2{
+
+    color:white;
+
+    font-size:3rem;
+
+    margin-bottom:30px;
+
+    text-shadow:0 2px 10px rgba(0,0,0,.6);
+
+}
+
+/* ========================= */
+/* FORMULARIO */
+/* ========================= */
+
+form{
+
+    width:380px;
+
+    max-width:90%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+form input{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.92);
+
+    font-size:1rem;
+
+}
+
+form button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#c4334b;
+
+    color:rgb(255, 240, 240);
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+form button:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ========================= */
+/* MENSAJE CONFIRMACION */
+/* ========================= */
+
+#mensajeConfirmacion{
+
+    margin-top:20px;
+
+    color:rgb(39, 37, 37);
+
+    font-size:1.2rem;
+
+    text-shadow:0 2px 10px rgba(0,0,0,.5);
+
+}
+
+/* ========================= */
+/* CONFIRMADOS */
+/* ========================= */
+
+.confirmados{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-top:30px;
+
+}
+
+#totalAsistentes{
+
+    color:rgb(255, 246, 246);
+
+    font-size:2rem;
+
+    text-shadow:0 2px 10px rgba(0,0,0,.5);
+
+}
+
+/* ========================= */
+/* BOTON MUSICA */
+/* ========================= */
+
+.btnMusic{
+
+    position:fixed;
+
+    bottom:20px;
+
+    left:20px;
+
+    z-index:9999;
+
+    border:none;
+
+    background:#d9a8b0;
+
+    color:white;
+
+    padding:12px 18px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+}
+
+/* ========================= */
+/* BOTON WHATSAPP */
+/* ========================= */
+
+.btnWhatsapp{
+
+    position:fixed;
+
+    bottom:20px;
+
+    right:20px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:30px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.3);
+
+    z-index:9999;
+
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media(max-width:768px){
+
+    .contenidoHero h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .rsvp h2{
+
+        font-size:2rem;
+
+    }
+
+    #totalAsistentes{
+
+        font-size:1.5rem;
+
+    }
+
+}

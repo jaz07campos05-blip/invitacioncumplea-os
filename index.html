@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis 3 Años | Eidan Toshiro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- PORTADA -->
+
+    <section class="hero">
+
+        <img src="PORTADA 2.jfif" alt="Portada">
+
+        <div class="contenidoHero">
+
+            <h3>MIS 3 AÑOS</h3>
+
+            <h1>EIDAN TOSHIRO</h1>
+
+            <h2>04 FEBRERO 2027</h2>
+
+        </div>
+
+    </section>
+
+    <!-- MENSAJE -->
+
+    <section class="mensaje">
+
+        <p>
+            Te invito a celebrar el inicio de un nuevo año en mi vida junto a mis papás y familiares,
+            llenos de ilusión y amor.
+        </p>
+
+    </section>
+
+    <!-- CONTADOR -->
+
+    <section class="contador">
+
+        <h2>⏳ Faltan</h2>
+
+        <div id="countdown">
+
+            <div>
+                <span id="days">0</span>
+                <p>Días</p>
+            </div>
+
+            <div>
+                <span id="hours">0</span>
+                <p>Horas</p>
+            </div>
+
+            <div>
+                <span id="minutes">0</span>
+                <p>Minutos</p>
+            </div>
+
+            <div>
+                <span id="seconds">0</span>
+                <p>Segundos</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERÍA -->
+
+    <section class="galeria">
+
+        <img src="foto toshi 1.jfif" alt="Foto 1">
+
+        <img src="foto toshi 2.jfif" alt="Foto 2">
+
+        <img src="foto toshi 3.jfif" alt="Foto 3">
+
+    </section>
+
+    <!-- UBICACIÓN -->
+
+    <section class="mapa">
+
+        <h2>📍 Ubicación</h2>
+
+        <a
+        href="https://maps.app.goo.gl/mGMANAMnQYBDyAT1A"
+        target="_blank">
+
+        Ver ubicación
+
+        </a>
+
+    </section>
+
+    <!-- RSVP PREMIUM -->
+
+    <section class="rsvp">
+
+        <h2>💌 Confirmar asistencia</h2>
+
+        <form id="formulario">
+
+            <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre completo"
+            required>
+
+            <input
+            type="number"
+            id="personas"
+            placeholder="Número de personas"
+            required>
+
+            <button type="submit">
+
+                Confirmar asistencia
+
+            </button>
+
+        </form>
+
+        <h3 id="mensajeConfirmacion"></h3>
+
+        <!-- TOTAL CONFIRMADOS -->
+
+        <section class="confirmados">
+
+            <h2 id="totalAsistentes">
+
+                👥 Confirmados: 0
+
+            </h2>
+
+        </section>
+
+    </section>
+
+    <!-- AUDIO -->
+
+    <audio id="bgMusic" loop>
+
+        <source
+        src="audio/musica.mp3"
+        type="audio/mpeg">
+
+    </audio>
+
+    <!-- BOTÓN MÚSICA -->
+
+    <button
+    class="btnMusic"
+    onclick="toggleMusic()">
+
+        🎵 Música
+
+    </button>
+
+    <!-- BOTÓN WHATSAPP -->
+
+    <a
+    class="btnWhatsapp"
+    href="https://wa.me/5218128939896"
+    target="_blank">
+
+        💬
+
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
